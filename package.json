@@ -1,7 +1,7 @@
 {
-  "name": "backend-gis",
+  "name": "backendnodejs-gis",
   "version": "1.0.0",
-  "description": "back end gis project",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/NhatSinh2002/Backend-NodeJS-GIS.git"
   },
-  "keywords": [
-    "nodejs",
-    "gis"
-  ],
   "author": "Nhat Sinh",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/NhatSinh2002/Backend-NodeJS-GIS/issues"
   },
-  "homepage": "https://github.com/NhatSinh2002/Backend-NodeJS-GIS#readme"
+  "homepage": "https://github.com/NhatSinh2002/Backend-NodeJS-GIS#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.1"
+  }
 }
