@@ -8,6 +8,7 @@ const faceRoute = require("./router/face");
 const nodeRoute = require("./router/node");
 const pointRoute = require("./router/point");
 const curveRoute = require("./router/curve");
+const polygonRoute = require("./router/polygon");
 
 // Load environment variables from .env file
 dotenv.config();
@@ -35,6 +36,7 @@ app.use("/v1/face", faceRoute);
 app.use("/v1/node", nodeRoute);
 app.use("/v1/point", pointRoute);
 app.use("/v1/curve", curveRoute);
+app.use("/v1/polygon", polygonRoute);
 
 // Start the server
 const PORT = process.env.PORT || 8000;
