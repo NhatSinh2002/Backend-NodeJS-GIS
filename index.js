@@ -6,9 +6,14 @@ const cookieParser = require("cookie-parser");
 const authRoute = require("./router/auth");
 const faceRoute = require("./router/face");
 const nodeRoute = require("./router/node");
+const lineRouter = require("./router/line");
+const cylinderRouter = require("./router/cylinder");
 const pointRoute = require("./router/point");
 const curveRoute = require("./router/curve");
 const polygonRoute = require("./router/polygon");
+const prismRoute = require("./router/prism");
+
+
 
 // Load environment variables from .env file
 dotenv.config();
@@ -34,9 +39,12 @@ app.use(express.json());
 app.use("/v1/auth", authRoute);
 app.use("/v1/face", faceRoute);
 app.use("/v1/node", nodeRoute);
+app.use("/v1/line", lineRouter);
 app.use("/v1/point", pointRoute);
+app.use("/v1/cylinder", cylinderRouter);
 app.use("/v1/curve", curveRoute);
 app.use("/v1/polygon", polygonRoute);
+app.use("/v1/prism", prismRoute);
 
 // Start the server
 const PORT = process.env.PORT || 8000;

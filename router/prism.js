@@ -8,7 +8,7 @@ const prismController = require("../controllers/prismControllers");
 router.get("/", prismController.getPrisms);
 
 // GET prism by ID
-router.get("/:id", prismController.getPrism);
+//router.get("/:id", prismController.getPrism);
 
 // POST a new prism
 router.post("/", prismController.postPrism);
